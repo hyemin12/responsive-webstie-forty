@@ -75,8 +75,7 @@
   background-color: #2a2f4a;
 }
 #two > div {
-  /* width: 70vh; */
-  padding: 5vh;
+  padding: 4em;
 }
 #two h2 {
   display: inline-block;
@@ -91,7 +90,7 @@
 
 /* SEND MESSAGE */
 .send-message {
-  padding: 7vh 5vh;
+  padding: 6em 4em;
 }
 .send-message .input-group {
   display: flex;
@@ -163,31 +162,31 @@
 
 /* CONTACT */
 .contact {
-  padding: 0 5vh;
+  padding: 0 4em;
 }
 .contact > ul > li {
   display: flex;
   gap: 20px;
-  padding: 5vh 0;
+  padding: 4em 0;
   position: relative;
 }
 .contact > ul > li::before {
   content: "";
-  width: calc(100% + 10vh);
+  width: calc(100% + 10em);
   height: 1px;
   background-color: rgb(54 59 86);
   position: absolute;
   top: 0;
-  left: -5vh;
+  left: -5em;
 }
 .contact > ul > li:last-child::after {
   content: "";
-  width: calc(100% + 10vh);
+  width: calc(100% + 10em);
   height: 1px;
   background-color: rgb(54 59 86);
   position: absolute;
   bottom: 0;
-  left: -5vh;
+  left: -5em;
 }
 .contact .icon {
   width: 32px;

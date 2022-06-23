@@ -1,1 +1,24 @@
 /* generic.html */
+.generic header {
+  background-color: #2a2f4a;
+  box-shadow: 0 0 0 0.25em rgba(0, 0, 0, 0.1);
+}
+.generic_main {
+  padding: 3em 4em;
+}
+.generic_main h1 {
+  display: inline-block;
+  padding: 0.5em 0;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 1em;
+  font-size: 2.5em;
+}
+.generic_main img {
+  width: 100%;
+}
+.generic_main > div {
+  padding: 1.5em 0;
+}
+.generic_main p {
+  margin-bottom: 1em;
+}
