@@ -5,6 +5,7 @@
 }
 .generic_main {
   padding: 3em;
+  border-bottom: solid 1px rgba(212, 212, 255, 0.1);
 }
 .generic_main h1 {
   display: inline-block;
