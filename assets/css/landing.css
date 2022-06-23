@@ -1,1 +1,62 @@
 /* landing.html */
+.landing header {
+  background-color: #7e77b5;
+}
+.landing header #logo strong {
+  color: #7e77b5;
+}
+.landing .inner {
+  padding: 4em 3em;
+}
+
+.landing_title {
+  width: 100%;
+  background-color: #7e77b5;
+}
+.landing_title .inner {
+  padding: 9em 3em;
+}
+.landing_title h1 {
+  padding: 0.5em 0;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 0.5em;
+  font-size: 3em;
+}
+.landing_title p {
+  width: 400px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.landing_main {
+  background-color: #2a2f4a;
+}
+.landing_main h3 {
+  display: inline-block;
+  padding: 0.5em 0;
+  border-bottom: 2px solid #fff;
+  font-size: 1.75em;
+}
+.landing_main h4 {
+  display: inline-block;
+  padding: 0.5em 0;
+  border-bottom: 2px solid #fff;
+  font-size: 1.35em;
+}
+.landing_main p {
+  padding: 1.5em 0;
+  font-size: 0.9em;
+  letter-spacing: 0.1em;
+}
+.landing_main img {
+  width: 100%;
+}
+.landing_main.main2 {
+  background-color: #2e3450;
+}
+.landing_main.main2 .btn_border {
+  width: 145px;
+}
+.landing_main.main2 .btn_border a::before {
+  display: none;
+}

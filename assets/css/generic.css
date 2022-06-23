@@ -4,7 +4,7 @@
   box-shadow: 0 0 0 0.25em rgba(0, 0, 0, 0.1);
 }
 .generic_main {
-  padding: 3em 4em;
+  padding: 3em;
 }
 .generic_main h1 {
   display: inline-block;
