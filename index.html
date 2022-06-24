@@ -10,6 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
     />
     <link rel="stylesheet" href="./assets/css/common.css" />
+    <script defer src="./assets/js/main.js"></script>
   </head>
 
   <body>
@@ -23,7 +24,7 @@
           </a>
         </div>
         <nav>
-          <a href="#menu" class="nav">Menu</a>
+          <a href="#menu" class="btn_nav">Menu</a>
         </nav>
       </header>
 
@@ -68,36 +69,54 @@
       <div id="main">
         <div id="one">
           <div class="tile">
+            <div class="tile_hover">
+              <img src="./assets/images/pic01.jpg" alt="tile" />
+            </div>
             <a href="javascript:void(0)">
               <h3>Aliquam</h3>
               <p>IPSUM DOLOR SIT AMET</p>
             </a>
           </div>
           <div class="tile">
+            <div class="tile_hover">
+              <img src="./assets/images/pic02.jpg" alt="tile" />
+            </div>
             <a href="javascript:void(0)">
               <h3>Tempus</h3>
               <p>IPSUM DOLOR SIT AMET</p>
             </a>
           </div>
           <div class="tile">
+            <div class="tile_hover">
+              <img src="./assets/images/pic03.jpg" alt="tile" />
+            </div>
             <a href="javascript:void(0)">
               <h3>Magna</h3>
               <p>Lorem etiam nullam</p>
             </a>
           </div>
           <div class="tile">
+            <div class="tile_hover">
+              <img src="./assets/images/pic04.jpg" alt="tile" />
+            </div>
             <a href="javascript:void(0)">
               <h3>Ipsum</h3>
               <p>Nisl sed aliquam</p>
             </a>
           </div>
           <div class="tile">
+            <div class="tile_hover">
+              <img src="./assets/images/pic05.jpg" alt="tile" />
+            </div>
             <a href="javascript:void(0)">
               <h3>Consequat</h3>
               <p>Ipsum dolor sit amet</p>
             </a>
           </div>
           <div class="tile">
+            <div class="tile_hover">
+              <img src="./assets/images/pic06.jpg" alt="tile" />
+            </div>
             <a href="javascript:void(0)">
               <h3>Etiam</h3>
               <p>Feugiat amet tempus</p>
@@ -122,67 +141,75 @@
           </div>
         </div>
 
-        <!-- send message -->
-        <section class="send-message">
-          <form>
-            <div class="input-group">
-              <div class="send-name">
-                <label>Name</label>
-                <input type="text" name="name" />
+        <div class="flex_wrapper">
+          <!-- send message -->
+          <section class="send-message">
+            <form>
+              <div class="input-group">
+                <div class="send-name">
+                  <label>Name</label>
+                  <input type="text" name="name" />
+                </div>
+                <div class="send-email">
+                  <label>Email</label>
+                  <input type="text" name="email" />
+                </div>
+                <div class="send-msg">
+                  <label>Message</label>
+                  <textarea name="message"></textarea>
+                </div>
               </div>
-              <div class="send-email">
-                <label>Email</label>
-                <input type="text" name="email" />
-              </div>
-              <div class="send-msg">
-                <label>Message</label>
-                <textarea name="message"></textarea>
-              </div>
-            </div>
-            <ul class="btn_group">
+              <ul class="btn_group">
+                <li>
+                  <input type="submit" value="Send Message" class="btn_white" />
+                </li>
+                <li>
+                  <input type="reset" value="Clear" class="btn_reset" />
+                </li>
+              </ul>
+            </form>
+          </section>
+
+          <!-- contact -->
+          <section class="contact">
+            <ul>
               <li>
-                <input type="submit" value="Send Message" class="btn_white" />
+                <span class="icon_email icon"
+                  ><i class="fas fa-envelope"></i
+                ></span>
+                <div>
+                  <h3>Email</h3>
+                  <a href="javascript:void(0)" class="email_link"
+                    >admin@abcd.com</a
+                  >
+                </div>
               </li>
               <li>
-                <input type="reset" value="Clear" class="btn_reset" />
+                <span class="icon icon_phone"
+                  ><i class="fas fa-phone"></i
+                ></span>
+                <div>
+                  <h3>Phone</h3>
+                  <p>010-0000-0000</p>
+                </div>
+              </li>
+              <li>
+                <span class="icon icon_address"
+                  ><i class="fas fa-house-damage"></i
+                ></span>
+                <div>
+                  <h3>Address</h3>
+                  <p>
+                    1234 Somewhere Road #5432<br />
+                    Nashville, TN 00000<br />
+                    United States of America
+                  </p>
+                </div>
               </li>
             </ul>
-          </form>
-        </section>
+          </section>
+        </div>
       </div>
-
-      <!-- contact -->
-      <section class="contact">
-        <ul>
-          <li>
-            <span class="icon_email icon"><i class="fas fa-envelope"></i></span>
-            <div>
-              <h3>Email</h3>
-              <a href="javascript:void(0)" class="email_link">admin@abcd.com</a>
-            </div>
-          </li>
-          <li>
-            <span class="icon icon_phone"><i class="fas fa-phone"></i></span>
-            <div>
-              <h3>Phone</h3>
-              <p>010-0000-0000</p>
-            </div>
-          </li>
-          <li>
-            <span class="icon icon_address"
-              ><i class="fas fa-house-damage"></i
-            ></span>
-            <div>
-              <h3>Address</h3>
-              <p>
-                1234 Somewhere Road #5432<br />
-                Nashville, TN 00000<br />
-                United States of America
-              </p>
-            </div>
-          </li>
-        </ul>
-      </section>
 
       <!-- footer -->
       <footer>

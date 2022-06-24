@@ -158,7 +158,7 @@ header > nav:hover > a:after {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 9;
 }
 #nav.visible {
   display: flex;
@@ -225,8 +225,8 @@ header > nav:hover > a:after {
   height: 20px;
   background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="002020" zoomAndPan="disable"%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 2%3B %7D%3C/style%3E%3Cline x1="0" y1="0" x2="20" y2="20" /%3E%3Cline x1="20" y1="0" x2="0" y2="20" /%3E%3C/svg%3E');
   position: absolute;
-  top: 2vw;
-  right: 2vh;
+  top: 2em;
+  right: 2em;
   transition: 0.3s;
 }
 #nav .btn_close:hover {
@@ -342,6 +342,33 @@ header > nav:hover > a:after {
 .contact h3 {
   margin-bottom: 1em;
 }
+@media screen and (min-width: 980px) {
+  .flex_wrapper {
+    display: flex;
+    width: 100%;
+    /* max-width: 1050px; */
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(54 59 86);
+  }
+  .send-message {
+    width: 60%;
+    padding: 5em 3em;
+    border-right: 1px solid rgb(54 59 86);
+  }
+  .contact {
+    width: 40%;
+  }
+  .contact > ul > li::before {
+    left: -3em;
+  }
+  .contact > ul > li:first-child::before,
+  .contact > ul > li:last-child::after {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+}
 
 /* footer */
 footer {
@@ -349,7 +376,7 @@ footer {
 }
 footer .social_group {
   display: flex;
-  gap: 3%;
+  gap: 20px;
 }
 footer .social_group li {
   width: 32px;
